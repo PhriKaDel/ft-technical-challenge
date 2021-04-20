@@ -1,0 +1,55 @@
+{
+  "name": "ft-technical-challenge",
+  "version": "0.0.1",
+  "description": "A simple page that display search and results from FluidTopics API",
+  "main": "src/ft-app.js",
+  "module": "src/ft-app.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf src/**/*.{d.ts,d.ts.map,js,js.map}",
+    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
+    "lint:eslint": "eslint 'src/**/*.ts'",
+    "lint:lit-analyzer": "lit-analyzer",
+    "format": "prettier src/**/*.ts --write",
+    "build": "tsc",
+    "serve": "tsc && es-dev-server --node-resolve --watch"
+  },
+  "keywords": [
+    "web-components",
+    "lit-element",
+    "typescript"
+  ],
+  "author": "Laurent Zvara",
+  "dependencies": {
+    "@material/mwc-button": "^0.20.0",
+    "@material/mwc-circular-progress": "^0.20.0",
+    "@material/mwc-drawer": "^0.20.0",
+    "@material/mwc-icon-button": "^0.20.0",
+    "@material/mwc-linear-progress": "^0.20.0",
+    "@material/mwc-menu": "^0.20.0",
+    "@material/mwc-select": "^0.20.0",
+    "@material/mwc-snackbar": "^0.20.0",
+    "@material/mwc-textfield": "^0.20.0",
+    "@material/mwc-top-app-bar-fixed": "^0.20.0",
+    "@polymer/paper-tooltip": "^3.0.1",
+    "@webcomponents/webcomponentsjs": "^2.5.0",
+    "lit-element": "^2.3.1"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^1.9.4",
+    "deepmerge": "^4.2.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4",
+    "@babel/core": "7.13.10",
+    "@babel/eslint-parser": "7.13.10",
+    "@typescript-eslint/eslint-plugin": "4.21.0",
+    "@typescript-eslint/parser": "4.21.0",
+    "es-dev-server": "^1.46.1",
+    "eslint": "7.22.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "lit-analyzer": "^1.1.10",
+    "prettier": "^2.0.4",
+    "web-component-analyzer": "^1.0.3"
+  }
+}
